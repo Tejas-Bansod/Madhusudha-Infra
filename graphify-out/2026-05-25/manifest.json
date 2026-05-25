@@ -1,0 +1,102 @@
+{
+  "/home/tejas/Desktop/Realestate/crm/package.json": {
+    "mtime": 1779598737.0766716,
+    "ast_hash": "60da21cb4860bd86ae8afd201fcd7af1",
+    "semantic_hash": "60da21cb4860bd86ae8afd201fcd7af1"
+  },
+  "/home/tejas/Desktop/Realestate/crm/components.json": {
+    "mtime": 1779598689.083316,
+    "ast_hash": "c406f51c5fd4fda444a8aa913e846bb6",
+    "semantic_hash": "c406f51c5fd4fda444a8aa913e846bb6"
+  },
+  "/home/tejas/Desktop/Realestate/crm/eslint.config.mjs": {
+    "mtime": 1779597621.8760767,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "/home/tejas/Desktop/Realestate/crm/postcss.config.mjs": {
+    "mtime": 1779597621.8760767,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "/home/tejas/Desktop/Realestate/crm/next.config.ts": {
+    "mtime": 1779597621.8760767,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "/home/tejas/Desktop/Realestate/crm/tsconfig.json": {
+    "mtime": 1779597621.8820767,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "/home/tejas/Desktop/Realestate/crm/src/lib/utils.ts": {
+    "mtime": 1779598739.4266884,
+    "ast_hash": "5a6fd53fdcf2be529e9cc0b718fde352",
+    "semantic_hash": "5a6fd53fdcf2be529e9cc0b718fde352"
+  },
+  "/home/tejas/Desktop/Realestate/crm/src/app/page.tsx": {
+    "mtime": 1779597621.8830767,
+    "ast_hash": "1e489b26bb597dc97f8d44954dd042da",
+    "semantic_hash": "1e489b26bb597dc97f8d44954dd042da"
+  },
+  "/home/tejas/Desktop/Realestate/crm/src/app/layout.tsx": {
+    "mtime": 1779598737.6366756,
+    "ast_hash": "dc50150c0bb7ddb1d3a33c9eab1c706f",
+    "semantic_hash": "dc50150c0bb7ddb1d3a33c9eab1c706f"
+  },
+  "/home/tejas/Desktop/Realestate/crm/src/components/ui/button.tsx": {
+    "mtime": 1779598739.3316877,
+    "ast_hash": "c6662f9ca47e3fc0cbc6f002db90709d",
+    "semantic_hash": "c6662f9ca47e3fc0cbc6f002db90709d"
+  },
+  "/home/tejas/Desktop/Realestate/crm/README.md": {
+    "mtime": 1779597621.8620765,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "/home/tejas/Desktop/Realestate/crm/AGENTS.md": {
+    "mtime": 1779597710.0558293,
+    "ast_hash": "9e09241799026ac05be315a2f0b50055",
+    "semantic_hash": "9e09241799026ac05be315a2f0b50055"
+  },
+  "/home/tejas/Desktop/Realestate/crm/CLAUDE.md": {
+    "mtime": 1779597710.0558293,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "/home/tejas/Desktop/Realestate/crm/.agents/rules/graphify.md": {
+    "mtime": 1779603390.4344337,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": "f1e53ecc9194573d3c28fc116c743a2e"
+  },
+  "/home/tejas/Desktop/Realestate/crm/.agents/workflows/graphify.md": {
+    "mtime": 1779603390.4344337,
+    "ast_hash": "afa1ffc01aa56ac681c7335686f44767",
+    "semantic_hash": "afa1ffc01aa56ac681c7335686f44767"
+  },
+  "/home/tejas/Desktop/Realestate/crm/public/file.svg": {
+    "mtime": 1779597621.8610766,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "/home/tejas/Desktop/Realestate/crm/public/globe.svg": {
+    "mtime": 1779597621.8780766,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "/home/tejas/Desktop/Realestate/crm/public/next.svg": {
+    "mtime": 1779597621.8790767,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "/home/tejas/Desktop/Realestate/crm/public/window.svg": {
+    "mtime": 1779597621.8800766,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "/home/tejas/Desktop/Realestate/crm/public/vercel.svg": {
+    "mtime": 1779597621.8790767,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  }
+}
