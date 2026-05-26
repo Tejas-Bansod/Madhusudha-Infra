@@ -95,7 +95,7 @@ export function DocumentGrid({ items, onFolderClick, onDelete }: DocumentGridPro
         <motion.div key={doc.id} variants={itemAnim}>
           <Card 
             onClick={() => doc.type === 'folder' && onFolderClick(doc.id)}
-            className={`group relative overflow-hidden border-border/50 bg-background/40 backdrop-blur-xl transition-all duration-300 hover:shadow-lg hover:border-primary/50 ${
+            className={`group p-0 relative overflow-hidden border-border/50 bg-background/40 backdrop-blur-xl transition-all duration-300 hover:shadow-lg hover:border-primary/50 ${
               doc.type === 'folder' ? 'cursor-pointer hover:bg-amber-500/5' : ''
             }`}
           >

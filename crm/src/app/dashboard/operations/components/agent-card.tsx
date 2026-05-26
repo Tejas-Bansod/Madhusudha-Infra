@@ -29,8 +29,8 @@ export function AgentCard({ agent, onViewDetails }: AgentCardProps) {
   };
 
   return (
-    <Card className="glass-card hover-glow border-border/50 overflow-hidden flex flex-col justify-between group transition-all duration-300">
-      <CardHeader className="p-5 pb-0 flex flex-row items-start justify-between gap-4">
+    <Card className="glass-card p-0 hover-glow border-border/50 overflow-hidden flex flex-col justify-between group transition-all duration-300">
+      <CardHeader className="p-4 pb-0 flex flex-row items-start justify-between gap-4">
         <div className="flex gap-4 items-center">
           <div className="relative">
             <Avatar className="h-14 w-14 border-2 border-border/60 shadow-sm">
@@ -69,7 +69,7 @@ export function AgentCard({ agent, onViewDetails }: AgentCardProps) {
         </div>
       </CardHeader>
 
-      <CardContent className="p-5 pt-4 space-y-4 flex-1">
+      <CardContent className="p-4 pt-2 space-y-2 flex-1">
         {/* Specialties Badges */}
         <div className="flex flex-wrap gap-1">
           {agent.specialty.map((spec) => (
@@ -113,7 +113,7 @@ export function AgentCard({ agent, onViewDetails }: AgentCardProps) {
         </div>
       </CardContent>
 
-      <CardFooter className="p-5 pt-0 border-t border-border/20 flex gap-2 items-center">
+      <CardFooter className="p-4 pt-0 border-t border-border/20 flex gap-2 items-center">
         {/* Quick Contacts */}
         <div className="flex gap-1.5">
           <Button

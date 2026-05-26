@@ -124,7 +124,7 @@ export default function SchedulesPage() {
           </h2>
           <div className="space-y-3">
             {detailedSchedules.map((item) => (
-              <Card key={item.id} className="glass-card hover-glow border-border/50 overflow-hidden transition-all duration-300">
+              <Card key={item.id} className="glass-card p-0 hover-glow border-border/50 overflow-hidden transition-all duration-300">
                 <CardHeader className="p-4 pb-0 flex flex-row justify-between items-center">
                   <div className="flex items-center gap-2">
                     <span className="h-2 w-2 rounded-full bg-primary" />
@@ -222,7 +222,7 @@ export default function SchedulesPage() {
           <h2 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/80 font-mono">
             Calendar Overview
           </h2>
-          <Card className="glass-card border-border/50 bg-card">
+          <Card className="glass-card p-0 border-border/50 bg-card">
             <CardHeader className="p-4 flex flex-row items-center gap-2">
               <CalendarDays className="h-4.5 w-4.5 text-primary" />
               <CardTitle className="text-sm font-bold">Showing Metrics</CardTitle>

@@ -71,7 +71,7 @@ export function VisitCalendar() {
 
   return (
     <div className="space-y-4 w-full">
-      <Card className="border-border/50 bg-background/50 backdrop-blur-xl shadow-sm overflow-hidden w-full">
+      <Card className="border-border/50 p-0 bg-background/50 backdrop-blur-xl shadow-sm overflow-hidden w-full">
         <CardContent className="p-0 w-full">
           
           {/* Calendar Header */}

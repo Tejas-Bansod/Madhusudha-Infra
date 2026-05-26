@@ -122,7 +122,7 @@ export function VisitList() {
     >
       {visits.map((visit) => (
         <motion.div key={visit.id} variants={item}>
-          <Card className="group overflow-hidden border-border/50 bg-background/50 backdrop-blur-xl transition-all duration-300 hover:shadow-md hover:border-primary/30">
+          <Card className="group p-0 overflow-hidden border-border/50 bg-background/50 backdrop-blur-xl transition-all duration-300 hover:shadow-md hover:border-primary/30">
             <CardContent className="p-0">
               <div className="flex flex-col md:flex-row">
                 
