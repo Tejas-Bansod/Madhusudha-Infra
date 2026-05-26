@@ -37,7 +37,7 @@ export function AgentLeaderboard({
   });
 
   return (
-    <div className="rounded-xl border border-border/40 overflow-hidden bg-slate-950/45 backdrop-blur-md">
+    <div className="rounded-xl border border-border/40 overflow-hidden bg-card/50 backdrop-blur-md shadow-sm">
       <Table>
         <TableHeader className="bg-muted/30">
           <TableRow className="border-b border-border/30 hover:bg-transparent">

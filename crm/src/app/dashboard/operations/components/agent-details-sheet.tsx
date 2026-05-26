@@ -69,7 +69,7 @@ export function AgentDetailsSheet({
 
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
-      <SheetContent className="w-full sm:max-w-[540px] border-l border-border/50 bg-slate-950/95 backdrop-blur-md p-0 flex flex-col h-full text-foreground shadow-2xl">
+      <SheetContent className="w-full sm:max-w-[540px] border-l border-border/50 bg-background/95 backdrop-blur-md p-0 flex flex-col h-full text-foreground shadow-2xl">
         <ScrollArea className="flex-1 h-full">
           <div className="p-6 space-y-6">
             {/* Header / Profile Cover Section */}
@@ -104,7 +104,7 @@ export function AgentDetailsSheet({
                   </div>
                 </div>
 
-                <Badge variant="outline" className="text-[10px] font-bold px-2 py-0.5 bg-slate-900 border-border uppercase">
+                <Badge variant="outline" className="text-[10px] font-bold px-2 py-0.5 bg-muted border-border uppercase">
                   {agent.status}
                 </Badge>
               </div>
@@ -130,15 +130,15 @@ export function AgentDetailsSheet({
 
             {/* Performance Snapshot Grid */}
             <div className="grid grid-cols-3 gap-3">
-              <div className="p-3.5 rounded-xl border border-border/40 bg-slate-900/30 text-center font-mono">
+              <div className="p-3.5 rounded-xl border border-border/40 bg-muted/20 text-center font-mono">
                 <span className="block text-sm font-extrabold text-foreground">{agent.metrics.salesVolume}</span>
                 <span className="text-[9px] text-muted-foreground uppercase font-bold tracking-tight block mt-1">Sales Closed</span>
               </div>
-              <div className="p-3.5 rounded-xl border border-border/40 bg-slate-900/30 text-center font-mono">
+              <div className="p-3.5 rounded-xl border border-border/40 bg-muted/20 text-center font-mono">
                 <span className="block text-sm font-extrabold text-foreground">{agent.metrics.commissionEarned}</span>
                 <span className="text-[9px] text-muted-foreground uppercase font-bold tracking-tight block mt-1">Comm. Earned</span>
               </div>
-              <div className="p-3.5 rounded-xl border border-border/40 bg-slate-900/30 text-center font-mono">
+              <div className="p-3.5 rounded-xl border border-border/40 bg-muted/20 text-center font-mono">
                 <span className="block text-sm font-extrabold text-foreground flex items-center justify-center gap-0.5">
                   <Star className="h-3.5 w-3.5 text-amber-500 fill-current shrink-0" />
                   {agent.metrics.rating}
@@ -181,7 +181,7 @@ export function AgentDetailsSheet({
                   </h4>
                   <div className="flex flex-wrap gap-1.5">
                     {agent.specialty.map((spec) => (
-                      <Badge key={spec} variant="outline" className="text-[10px] px-2 py-0.5 border-border bg-slate-900 font-semibold text-foreground">
+                      <Badge key={spec} variant="outline" className="text-[10px] px-2 py-0.5 border-border bg-muted font-semibold text-foreground">
                         {spec}
                       </Badge>
                     ))}
@@ -195,7 +195,7 @@ export function AgentDetailsSheet({
                   </h4>
                   <div className="space-y-2">
                     {mockReviews.map((rev) => (
-                      <div key={rev.id} className="p-3 rounded-lg border border-border/30 bg-slate-900/25 space-y-2 text-xs">
+                      <div key={rev.id} className="p-3 rounded-lg border border-border/30 bg-muted/20 space-y-2 text-xs">
                         <div className="flex justify-between items-center">
                           <span className="font-bold text-foreground">{rev.client}</span>
                           <span className="text-[9px] text-muted-foreground">{rev.date}</span>
@@ -235,11 +235,11 @@ export function AgentDetailsSheet({
                     {agentListings.map((listing) => (
                       <div
                         key={listing.id}
-                        className="p-3 rounded-xl border border-border/40 bg-slate-900/35 hover:bg-slate-900/60 transition-all duration-200 flex items-center justify-between gap-3 group/item cursor-pointer"
+                        className="p-3 rounded-xl border border-border/40 bg-muted/20 hover:bg-muted/30 transition-all duration-200 flex items-center justify-between gap-3 group/item cursor-pointer"
                       >
                         <div className="flex gap-3 items-center min-w-0">
                           {listing.image && (
-                            <div className="h-10 w-14 rounded overflow-hidden shrink-0 border border-slate-800 bg-slate-900">
+                            <div className="h-10 w-14 rounded overflow-hidden shrink-0 border border-border bg-muted/30">
                               <img
                                 src={listing.image}
                                 alt={listing.title}
@@ -285,14 +285,14 @@ export function AgentDetailsSheet({
                 </div>
 
                 {/* CSS Bar Chart */}
-                <div className="bg-slate-900/35 border border-border/40 rounded-xl p-6 space-y-6">
+                <div className="bg-muted/20 border border-border/40 rounded-xl p-6 space-y-6">
                   <div className="flex h-36 items-end justify-between gap-4 pt-4 px-2 border-b border-border/30 font-mono">
                     {agent.monthlySales.map((sales) => {
                       const percentage = maxSales > 0 ? (sales.amount / maxSales) * 100 : 0;
                       return (
                         <div key={sales.month} className="flex-1 flex flex-col items-center gap-2 group/bar">
                           {/* Value Tag tooltip */}
-                          <span className="text-[9px] font-bold text-foreground opacity-0 group-hover/bar:opacity-100 transition-opacity duration-200 bg-slate-950 border border-slate-800 rounded px-1 -translate-y-1">
+                          <span className="text-[9px] font-bold text-foreground opacity-0 group-hover/bar:opacity-100 transition-opacity duration-200 bg-popover border border-border rounded px-1 -translate-y-1">
                             ₹{sales.amount}Cr
                           </span>
                           {/* Bar */}

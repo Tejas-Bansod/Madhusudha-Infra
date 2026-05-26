@@ -222,7 +222,7 @@ export default function SchedulesPage() {
           <h2 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/80 font-mono">
             Calendar Overview
           </h2>
-          <Card className="glass-card border-border/50 bg-slate-900/10">
+          <Card className="glass-card border-border/50 bg-card">
             <CardHeader className="p-4 flex flex-row items-center gap-2">
               <CalendarDays className="h-4.5 w-4.5 text-primary" />
               <CardTitle className="text-sm font-bold">Showing Metrics</CardTitle>

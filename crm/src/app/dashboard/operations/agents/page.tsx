@@ -116,7 +116,7 @@ export default function AgentsPage() {
       {/* KPI Cards Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Card 1 */}
-        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-slate-900/10 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
+        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-muted/20 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
           <div className="space-y-1.5 z-10">
             <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-wider block">
               Cumulative Volume
@@ -131,7 +131,7 @@ export default function AgentsPage() {
         </div>
 
         {/* Card 2 */}
-        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-slate-900/10 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
+        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-muted/20 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
           <div className="space-y-1.5 z-10">
             <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-wider block">
               Deals Concluded
@@ -146,7 +146,7 @@ export default function AgentsPage() {
         </div>
 
         {/* Card 3 */}
-        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-slate-900/10 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
+        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-muted/20 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
           <div className="space-y-1.5 z-10">
             <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-wider block">
               Team Satisfaction
@@ -161,7 +161,7 @@ export default function AgentsPage() {
         </div>
 
         {/* Card 4 */}
-        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-slate-900/10 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
+        <div className="glass-card p-4 rounded-2xl border border-border/50 bg-muted/20 flex items-center justify-between gap-4 relative overflow-hidden group hover:border-primary/30 transition-all duration-300">
           <div className="space-y-1.5 z-10">
             <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-wider block">
               Active Deployment
@@ -177,14 +177,14 @@ export default function AgentsPage() {
       </div>
 
       {/* Filter and View Toggle bar */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-slate-900/10 border border-border/40 p-4 rounded-2xl">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-muted/20 border border-border/40 p-4 rounded-2xl">
         <div className="flex flex-1 flex-col sm:flex-row items-stretch sm:items-center gap-3">
           {/* Search */}
           <div className="relative flex-1 max-w-sm">
             <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground/60" />
             <Input
               placeholder="Search name, designation..."
-              className="pl-9 h-9 rounded-xl border-border/50 text-xs bg-slate-950"
+              className="pl-9 h-9 rounded-xl border-border/50 text-xs bg-background"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -192,10 +192,10 @@ export default function AgentsPage() {
 
           {/* Specialty Filter */}
           <Select value={selectedSpecialty} onValueChange={setSelectedSpecialty}>
-            <SelectTrigger className="w-full sm:w-[160px] h-9 rounded-xl border-border/50 text-xs bg-slate-950">
+            <SelectTrigger className="w-full sm:w-[160px] h-9 rounded-xl border-border/50 text-xs bg-background">
               <SelectValue placeholder="Specialty" />
             </SelectTrigger>
-            <SelectContent className="bg-slate-950 border border-border/50">
+            <SelectContent className="bg-popover border border-border/50">
               <SelectItem value="all">All Specialties</SelectItem>
               {specialties.map((spec) => (
                 <SelectItem key={spec} value={spec}>
@@ -207,10 +207,10 @@ export default function AgentsPage() {
 
           {/* Status Filter */}
           <Select value={selectedStatus} onValueChange={setSelectedStatus}>
-            <SelectTrigger className="w-full sm:w-[150px] h-9 rounded-xl border-border/50 text-xs bg-slate-950">
+            <SelectTrigger className="w-full sm:w-[150px] h-9 rounded-xl border-border/50 text-xs bg-background">
               <SelectValue placeholder="Status" />
             </SelectTrigger>
-            <SelectContent className="bg-slate-950 border border-border/50">
+            <SelectContent className="bg-popover border border-border/50">
               <SelectItem value="all">All Statuses</SelectItem>
               <SelectItem value="Active">Active</SelectItem>
               <SelectItem value="On Showing">On Showing</SelectItem>
@@ -227,7 +227,7 @@ export default function AgentsPage() {
             className={cn(
               "h-8 w-8 rounded-lg",
               activeView === "grid"
-                ? "bg-slate-950 text-foreground border border-border/30 hover:bg-slate-950"
+                ? "bg-background text-foreground border border-border/30 hover:bg-background"
                 : "text-muted-foreground hover:bg-muted/15"
             )}
             onClick={() => setActiveView("grid")}
@@ -240,7 +240,7 @@ export default function AgentsPage() {
             className={cn(
               "h-8 w-8 rounded-lg",
               activeView === "leaderboard"
-                ? "bg-slate-950 text-foreground border border-border/30 hover:bg-slate-950"
+                ? "bg-background text-foreground border border-border/30 hover:bg-background"
                 : "text-muted-foreground hover:bg-muted/15"
             )}
             onClick={() => setActiveView("leaderboard")}

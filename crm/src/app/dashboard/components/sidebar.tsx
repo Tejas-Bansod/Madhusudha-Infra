@@ -126,21 +126,21 @@ const appsItems = [
     icon: ClipboardList, 
     bgClass: "bg-amber-500",
     subItems: [
-      { name: "Site Visits", href: "/dashboard/appointments", icon: CalendarDays },
-      { name: "Form Builder", href: "/dashboard/forms/builder", icon: PenTool }
+      { name: "Site Visits", href: "/dashboard/appointments/site-visits", icon: CalendarDays },
+      // { name: "Form Builder", href: "/dashboard/forms/builder", icon: PenTool }
     ]
   },
 
-  { 
-    name: "Automations", 
-    href: "/dashboard/automations", 
-    icon: Zap, 
-    bgClass: "bg-yellow-500",
-    subItems: [
-      { name: "Workflows", href: "/dashboard/automations/workflows", icon: GitBranch },
-      { name: "Settings", href: "/dashboard/automations/settings", icon: Settings2 }
-    ]
-  },
+  // { 
+  //   name: "Automations", 
+  //   href: "/dashboard/automations", 
+  //   icon: Zap, 
+  //   bgClass: "bg-yellow-500",
+  //   subItems: [
+  //     { name: "Workflows", href: "/dashboard/automations/workflows", icon: GitBranch },
+  //     { name: "Settings", href: "/dashboard/automations/settings", icon: Settings2 }
+  //   ]
+  // },
 ];
 
 
