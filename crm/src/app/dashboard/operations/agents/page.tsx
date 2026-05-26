@@ -102,7 +102,7 @@ export default function AgentsPage() {
             Operations Consultants
           </h1>
           <p className="text-xs text-muted-foreground mt-1">
-            Track performance, listing portfolios, and sales volume of your advisory team.
+            Track performance, listing portfolios, and sales volume of your advisory team. 
           </p>
         </div>
         <div className="flex items-center gap-2">
