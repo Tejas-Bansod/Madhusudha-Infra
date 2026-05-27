@@ -2869,7 +2869,7 @@
       "label": "PROPERTY_TYPES",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/data/listings.ts",
-      "source_location": "L38",
+      "source_location": "L33",
       "id": "data_listings_property_types",
       "community": 7,
       "norm_label": "property_types"
@@ -2878,7 +2878,7 @@
       "label": "LISTING_STATUSES",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/data/listings.ts",
-      "source_location": "L82",
+      "source_location": "L77",
       "id": "data_listings_listing_statuses",
       "community": 7,
       "norm_label": "listing_statuses"
@@ -2887,7 +2887,7 @@
       "label": "mockListings",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/data/listings.ts",
-      "source_location": "L94",
+      "source_location": "L89",
       "id": "data_listings_mocklistings",
       "community": 7,
       "norm_label": "mocklistings"
@@ -2977,7 +2977,7 @@
       "label": "PropertyFormProps",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/components/property-form.tsx",
-      "source_location": "L37",
+      "source_location": "L36",
       "id": "components_property_form_propertyformprops",
       "community": 7,
       "norm_label": "propertyformprops"
@@ -2986,7 +2986,7 @@
       "label": "COMMON_AMENITIES",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/components/property-form.tsx",
-      "source_location": "L42",
+      "source_location": "L41",
       "id": "components_property_form_common_amenities",
       "community": 7,
       "norm_label": "common_amenities"
@@ -2995,7 +2995,7 @@
       "label": "SortableMediaItem()",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/components/property-form.tsx",
-      "source_location": "L50",
+      "source_location": "L49",
       "id": "components_property_form_sortablemediaitem",
       "community": 7,
       "norm_label": "sortablemediaitem()"
@@ -3004,7 +3004,7 @@
       "label": "PropertyForm()",
       "file_type": "code",
       "source_file": "crm/src/app/dashboard/properties/components/property-form.tsx",
-      "source_location": "L85",
+      "source_location": "L84",
       "id": "components_property_form_propertyform",
       "community": 7,
       "norm_label": "propertyform()"
@@ -7574,9 +7574,9 @@
       "source_file": "crm/package.json",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "crm_package_dependencies",
-      "target": "crm_package_dependencies_maplibre_gl"
+      "target": "crm_package_dependencies_maplibre_gl",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21037,9 +21037,9 @@
       "source_file": "crm/src/app/dashboard/properties/components/property-form.tsx",
       "source_location": "L49",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "crm_src_app_dashboard_properties_components_property_form_tsx",
-      "target": "components_property_form_sortablemediaitem"
+      "target": "components_property_form_sortablemediaitem",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",

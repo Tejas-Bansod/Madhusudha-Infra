@@ -97,7 +97,7 @@ const appsItems = [
     bgClass: "bg-violet-500",
     subItems: [
       { name: "Listings", href: "/dashboard/properties/listings", icon: List },
-      { name: "Add Property", href: "/dashboard/properties/listings/add", icon: ListPlus },
+      { name: "Add Property", href: "/dashboard/properties/add-property", icon: ListPlus },
     ]
   },
 

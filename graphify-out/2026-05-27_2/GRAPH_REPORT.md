@@ -1,11 +1,11 @@
 # Graph Report - Realestate  (2026-05-27)
 
 ## Corpus Check
-- 125 files · ~57,807 words
+- 122 files · ~55,630 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 751 nodes · 1890 edges · 55 communities (38 shown, 17 thin omitted)
+- 741 nodes · 1839 edges · 50 communities (33 shown, 17 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
@@ -45,7 +45,6 @@
 - [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 29|Community 29]]
-- [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
 - [[_COMMUNITY_Community 33|Community 33]]
@@ -60,22 +59,18 @@
 - [[_COMMUNITY_Community 43|Community 43]]
 - [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Community 45|Community 45]]
-- [[_COMMUNITY_Community 51|Community 51]]
-- [[_COMMUNITY_Community 52|Community 52]]
-- [[_COMMUNITY_Community 53|Community 53]]
-- [[_COMMUNITY_Community 55|Community 55]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `cn()` - 295 edges
-2. `Button()` - 48 edges
+1. `cn()` - 294 edges
+2. `Button()` - 47 edges
 3. `Badge()` - 32 edges
-4. `Input()` - 20 edges
-5. `Avatar()` - 19 edges
-6. `AvatarImage()` - 19 edges
-7. `AvatarFallback()` - 19 edges
-8. `Card()` - 18 edges
-9. `CardContent()` - 18 edges
-10. `compilerOptions` - 17 edges
+4. `Avatar()` - 19 edges
+5. `AvatarImage()` - 19 edges
+6. `AvatarFallback()` - 19 edges
+7. `Input()` - 19 edges
+8. `compilerOptions` - 17 edges
+9. `compilerOptions` - 16 edges
+10. `Card()` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `RootLayout()` --calls--> `cn()`  [EXTRACTED]
@@ -89,7 +84,7 @@
 - `AgentsPage()` --calls--> `cn()`  [EXTRACTED]
   crm/src/app/dashboard/operations/agents/page.tsx → crm/src/lib/utils.ts
 
-## Communities (55 total, 17 thin omitted)
+## Communities (50 total, 17 thin omitted)
 
 ### Community 0 - "TypeScript Compiler Options"
 Cohesion: 0.10
@@ -97,11 +92,11 @@ Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModu
 
 ### Community 1 - "Project Frontend Dependencies"
 Cohesion: 0.05
-Nodes (44): dependencies, @base-ui/react, class-variance-authority, clsx, cmdk, date-fns, @dnd-kit/core, @dnd-kit/sortable (+36 more)
+Nodes (43): dependencies, @base-ui/react, class-variance-authority, clsx, cmdk, date-fns, @dnd-kit/core, @dnd-kit/sortable (+35 more)
 
 ### Community 2 - "UI Components and Utilities"
-Cohesion: 0.09
-Nodes (16): geistMono, geistSans, inter, metadata, plusJakartaSans, RootLayout(), geistMono, geistSans (+8 more)
+Cohesion: 0.11
+Nodes (13): geistMono, geistSans, inter, metadata, plusJakartaSans, RootLayout(), geistMono, geistSans (+5 more)
 
 ### Community 3 - "Shadcn Component Configuration"
 Cohesion: 0.13
@@ -112,16 +107,16 @@ Cohesion: 0.22
 Nodes (9): NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink(), NavigationMenuList(), NavigationMenuTrigger(), navigationMenuTriggerStyle (+1 more)
 
 ### Community 5 - "Project Metadata and Scripts"
-Cohesion: 0.16
-Nodes (14): CustomerCard(), CustomerDrawer(), CustomersPage(), getProgressColor(), getProgressPercentage(), StatCard(), Customer, CUSTOMER_STATUSES (+6 more)
+Cohesion: 0.06
+Nodes (62): AgentDetailsSheetProps, AgentLeaderboardProps, ListingCard(), ListingCardProps, ListingDetailsDrawer(), ListingDetailsDrawerProps, ListingMapHud(), ListingMapHudProps (+54 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.09
-Nodes (27): ScheduleVisitModal(), VisitCalendar(), VisitList(), VisitStats(), featuredListings, overviewData, recentLeads, revenueData (+19 more)
+Cohesion: 0.07
+Nodes (35): AgentCard(), AgentCardProps, DocumentStats(), EmailComposer(), EmailLogEntry, EmailLogTable(), DEFAULT_EMAIL_STATS, EmailStats() (+27 more)
 
 ### Community 7 - "Tailwind Theme Configurations"
-Cohesion: 0.06
-Nodes (39): AgentDetailsSheetProps, ListingCard(), ListingDetailsDrawer(), ListingDetailsDrawerProps, ListingMapHud(), ListingMapHudProps, ListingTable(), NotificationsDropdown() (+31 more)
+Cohesion: 0.18
+Nodes (10): Theme, ThemeContext, ThemeContextType, ThemeProvider(), useTheme(), Topbar(), DashboardContent(), SchedulesPage() (+2 more)
 
 ### Community 8 - "Storefront Landing Page Assets"
 Cohesion: 0.50
@@ -136,16 +131,16 @@ Cohesion: 0.09
 Nodes (21): dependencies, next, react, react-dom, devDependencies, eslint, eslint-config-next, tailwindcss (+13 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.07
-Nodes (29): appsItems, Sidebar(), SidebarProps, upperNavItems, Column(), columns, dropAnimation, measuring (+21 more)
+Cohesion: 0.11
+Nodes (20): Column(), columns, dropAnimation, measuring, SortableTask(), TaskBoard(), TaskCard(), TaskTable() (+12 more)
 
 ### Community 22 - "Community 22"
 Cohesion: 0.10
 Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.09
-Nodes (22): ComboboxChip(), ComboboxChips(), ComboboxChipsInput(), ComboboxClear(), ComboboxContent(), ComboboxEmpty(), ComboboxGroup(), ComboboxInput() (+14 more)
+Cohesion: 0.10
+Nodes (21): ComboboxChip(), ComboboxChips(), ComboboxChipsInput(), ComboboxClear(), ComboboxContent(), ComboboxEmpty(), ComboboxGroup(), ComboboxInput() (+13 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.12
@@ -160,24 +155,20 @@ Cohesion: 0.19
 Nodes (13): Carousel(), CarouselApi, CarouselContent(), CarouselContext, CarouselContextProps, CarouselItem(), CarouselNext(), CarouselOptions (+5 more)
 
 ### Community 27 - "Community 27"
-Cohesion: 0.09
-Nodes (25): cn(), Accordion(), AccordionContent(), AccordionItem(), AccordionTrigger(), AvatarBadge(), AvatarGroup(), AvatarGroupCount() (+17 more)
+Cohesion: 0.10
+Nodes (23): cn(), Accordion(), AccordionContent(), AccordionItem(), AccordionTrigger(), Breadcrumb(), BreadcrumbEllipsis(), BreadcrumbItem() (+15 more)
 
 ### Community 28 - "Community 28"
 Cohesion: 0.18
 Nodes (10): ChartConfig, ChartContainer(), ChartContext, ChartContextProps, ChartLegendContent(), ChartTooltipContent(), INITIAL_DIMENSION, THEMES (+2 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.06
-Nodes (62): AgentCardProps, AgentLeaderboardProps, DocumentGridProps, FileItem, DocumentListProps, FileItem, invoices, dropAnimation (+54 more)
-
-### Community 30 - "Community 30"
-Cohesion: 0.20
-Nodes (14): DocumentGrid(), DocumentList(), DocumentStats(), FileUploadModal(), FileItem, initialItems, Dialog(), DialogContent() (+6 more)
+Cohesion: 0.05
+Nodes (52): DocumentGrid(), DocumentGridProps, FileItem, DocumentList(), DocumentListProps, FileItem, invoices, dropAnimation (+44 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.23
-Nodes (8): Attachment, EmailComposer(), SUGGESTIONS, TEMPLATES, QUICK_SEND_STATS, RECENT_SENT, STATUS_COLORS, Separator()
+Cohesion: 0.43
+Nodes (5): ToggleGroup(), ToggleGroupContext, ToggleGroupItem(), Toggle(), toggleVariants
 
 ### Community 32 - "Community 32"
 Cohesion: 0.18
@@ -192,8 +183,8 @@ Cohesion: 0.40
 Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn More
 
 ### Community 35 - "Community 35"
-Cohesion: 0.11
-Nodes (24): AgentsPage(), AgentCard(), AgentDetailsSheet(), AgentLeaderboard(), EmailLogTableProps, EmailStatus, STATUS_META, CATEGORY_META (+16 more)
+Cohesion: 0.05
+Nodes (64): AgentsPage(), AgentDetailsSheet(), AgentLeaderboard(), Attachment, SUGGESTIONS, TEMPLATES, EmailLogTableProps, EmailStatus (+56 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.40
@@ -203,41 +194,25 @@ Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn Mor
 Cohesion: 0.22
 Nodes (7): Pagination(), PaginationContent(), PaginationEllipsis(), PaginationLink(), PaginationLinkProps, PaginationNext(), PaginationPrevious()
 
-### Community 51 - "Community 51"
-Cohesion: 0.20
-Nodes (9): EmailLogEntry, EmailLogTable(), DEFAULT_EMAIL_STATS, EmailStats(), EmailStatsProps, Stat, maxSent, MOCK_LOGS (+1 more)
-
-### Community 52 - "Community 52"
-Cohesion: 0.21
-Nodes (7): mockEvents, Popover(), PopoverContent(), PopoverDescription(), PopoverHeader(), PopoverTitle(), PopoverTrigger()
-
-### Community 53 - "Community 53"
-Cohesion: 0.20
-Nodes (9): Command(), CommandDialog(), CommandEmpty(), CommandGroup(), CommandInput(), CommandItem(), CommandList(), CommandSeparator() (+1 more)
-
-### Community 55 - "Community 55"
-Cohesion: 0.28
-Nodes (3): InvoiceList(), InvoiceStats(), Input()
-
 ## Knowledge Gaps
-- **211 isolated node(s):** `name`, `version`, `private`, `dev`, `build` (+206 more)
+- **208 isolated node(s):** `name`, `version`, `private`, `dev`, `build` (+203 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 27` to `UI Components and Utilities`, `Development Build Dependencies`, `Project Metadata and Scripts`, `Community 6`, `Tailwind Theme Configurations`, `Community 19`, `Community 21`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 35`, `Community 37`, `Community 51`, `Community 52`, `Community 53`, `Community 55`?**
-  _High betweenness centrality (0.380) - this node is a cross-community bridge._
-- **Why does `Button()` connect `Community 29` to `UI Components and Utilities`, `Community 35`, `Project Metadata and Scripts`, `Community 6`, `Tailwind Theme Configurations`, `Community 37`, `Community 51`, `Community 52`, `Community 21`, `Community 23`, `Community 55`, `Community 19`, `Community 26`, `Community 27`, `Community 30`, `Community 31`?**
+- **Why does `cn()` connect `Community 27` to `Community 32`, `Community 33`, `UI Components and Utilities`, `Community 35`, `Development Build Dependencies`, `Project Metadata and Scripts`, `Community 6`, `Tailwind Theme Configurations`, `Community 37`, `Community 19`, `Community 21`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 28`, `Community 29`, `Community 31`?**
+  _High betweenness centrality (0.382) - this node is a cross-community bridge._
+- **Why does `Button()` connect `Community 35` to `Community 37`, `Project Metadata and Scripts`, `Community 6`, `Community 19`, `Community 21`, `Community 23`, `Community 26`, `Community 27`, `Community 29`?**
   _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Why does `Badge()` connect `Community 29` to `Community 35`, `Project Metadata and Scripts`, `Community 6`, `Tailwind Theme Configurations`, `Community 51`, `Community 52`, `Community 27`, `Community 31`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `Badge()` connect `Project Metadata and Scripts` to `Community 27`, `Community 35`, `Community 29`, `Community 6`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _214 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _211 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `TypeScript Compiler Options` be split into smaller, more focused modules?**
   _Cohesion score 0.10476190476190476 - nodes in this community are weakly interconnected._
 - **Should `Project Frontend Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.04830917874396135 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.049494949494949494 - nodes in this community are weakly interconnected._
 - **Should `UI Components and Utilities` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._

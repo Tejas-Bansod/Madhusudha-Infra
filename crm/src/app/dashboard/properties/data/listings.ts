@@ -24,9 +24,15 @@ export interface PropertyListing {
   description: string;
   yearBuilt: number;
   roi: string;                 // Rental Yield ROI e.g. "5.8%" or "8.2%"
-  lat: number;                 // Mock coordinates (relative within visual container)
-  lng: number;                 
+  lat: number;                 // Geographic latitude (default: Hyderabad ~17.42)
+  lng: number;                 // Geographic longitude (default: Hyderabad ~78.37)
   image?: string;              // Pexels image URL
+  googleMapsUrl?: string;      // Google Maps share link for "Open in Google Maps" button
+  address?: string;
+  pincode?: string;
+  city?: string;
+  state?: string;
+  country?: string;
 }
 
 export const PROPERTY_TYPES: {
@@ -108,9 +114,10 @@ export const mockListings: PropertyListing[] = [
     description: "Experience sky-high luxury at Jubilee Hills. This double-height ceiling penthouse features a 360-degree panoramic view of KBR Park and the central city skyline, equipped with automated glass doors and an Italian marble master bath.",
     yearBuilt: 2024,
     roi: "5.4%",
-    lat: 35,
-    lng: 40,
+    lat: 17.4300,
+    lng: 78.4000,
     image: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=800",
+    googleMapsUrl: "https://maps.google.com/?q=Jubilee+Hills,+Hyderabad",
   },
   {
     id: "prop-2",
@@ -134,9 +141,10 @@ export const mockListings: PropertyListing[] = [
     description: "An elegant independent villa bordering the championship golf course in Boulder Hills. Features custom landscaping, wrap-around patios, modular German kitchen fitting, and triple height lobby entry.",
     yearBuilt: 2023,
     roi: "4.8%",
-    lat: 48,
-    lng: 28,
+    lat: 17.4350,
+    lng: 78.3450,
     image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
+    googleMapsUrl: "https://maps.google.com/?q=Gachibowli,+Hyderabad",
   },
   {
     id: "prop-3",
@@ -160,9 +168,10 @@ export const mockListings: PropertyListing[] = [
     description: "Grade-A office and retail commercial hub located in the heart of the Madhapur tech corridor. Ideal for IT companies or retail flagship stores seeking high-volume foot traffic and excellent brand exposure.",
     yearBuilt: 2025,
     roi: "8.2%",
-    lat: 25,
-    lng: 68,
+    lat: 17.4480,
+    lng: 78.3740,
     image: "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=800",
+    googleMapsUrl: "https://maps.google.com/?q=Madhapur,+Hyderabad",
   },
   {
     id: "prop-4",
@@ -186,9 +195,10 @@ export const mockListings: PropertyListing[] = [
     description: "Modern, high-rise luxury apartment in the booming Kokapet district. This unit offers an unobstructed lake view, cross-ventilation layout, and proximity to the Outer Ring Road (ORR) exit.",
     yearBuilt: 2025,
     roi: "6.1%",
-    lat: 62,
-    lng: 45,
+    lat: 17.3980,
+    lng: 78.3250,
     image: "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=800",
+    googleMapsUrl: "https://maps.google.com/?q=Kokapet,+Hyderabad",
   },
   {
     id: "prop-5",
@@ -212,9 +222,10 @@ export const mockListings: PropertyListing[] = [
     description: "A premium corner residential plot measuring 400 square yards in Kokapet. Part of a boutique layout with clear registry titles and complete development permissions from local civic bodies.",
     yearBuilt: 2024,
     roi: "N/A",
-    lat: 70,
-    lng: 58,
+    lat: 17.3950,
+    lng: 78.3220,
     image: "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800",
+    googleMapsUrl: "https://maps.google.com/?q=Kokapet,+Hyderabad",
   },
   {
     id: "prop-6",
@@ -238,8 +249,9 @@ export const mockListings: PropertyListing[] = [
     description: "Standalone commercial boutique building in Road No. 12, Banjara Hills. Offering premium spaces suitable for design studios, corporate headquarters, or dental clinics.",
     yearBuilt: 2022,
     roi: "7.5%",
-    lat: 18,
-    lng: 32,
+    lat: 17.4150,
+    lng: 78.4100,
     image: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800",
+    googleMapsUrl: "https://maps.google.com/?q=Banjara+Hills,+Hyderabad",
   },
 ];

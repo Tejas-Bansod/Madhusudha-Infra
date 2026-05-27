@@ -40,6 +40,7 @@ export default function AuthPage() {
           src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Real Estate Luxury Home Mobile Background"
           fill
+          sizes="(max-width: 1024px) 100vw, 1px"
           className="object-cover"
           priority
         />
@@ -53,15 +54,16 @@ export default function AuthPage() {
             src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Real Estate Luxury Home"
             fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30" />
+          <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/50 to-slate-950/30" />
         </div>
         
         <div className="relative z-20 flex items-center gap-2 text-2xl font-bold">
           <Building2 className="h-8 w-8 text-primary" />
-          <span className="tracking-tight font-extrabold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Madhusudha Infra</span>
+          <span className="tracking-tight font-extrabold bg-linear-to-r from-white to-slate-300 bg-clip-text text-transparent">Madhusudha Infra</span>
         </div>
         
         <div className="relative z-20 mt-auto">
@@ -99,7 +101,7 @@ export default function AuthPage() {
         {/* Mobile-only Header Logo */}
         <div className="absolute top-6 left-6 z-20 flex items-center gap-2 text-xl font-bold text-white lg:hidden">
           <Building2 className="h-6 w-6 text-primary" />
-          <span className="tracking-tight font-extrabold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Madhusudha Infra</span>
+          <span className="tracking-tight font-extrabold bg-linear-to-r from-white to-slate-300 bg-clip-text text-transparent">Madhusudha Infra</span>
         </div>
 
         {/* Glassmorphic Auth Card */}

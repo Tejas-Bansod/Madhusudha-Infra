@@ -1,7 +1,7 @@
 # Graph Report - Realestate  (2026-05-27)
 
 ## Corpus Check
-- 125 files · ~57,807 words
+- 125 files · ~57,403 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

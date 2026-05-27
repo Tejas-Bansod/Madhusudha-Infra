@@ -29,6 +29,7 @@ import {
   CheckCircle,
   HelpCircle,
   Briefcase,
+  ExternalLink,
 } from "lucide-react";
 import { Label } from "@/components/ui/label";
 
@@ -130,6 +131,17 @@ export function ListingDetailsDrawer({
               <MapPin className="h-3.5 w-3.5 text-primary shrink-0" />
               {listing.location}
             </SheetDescription>
+            {listing.googleMapsUrl && (
+              <a
+                href={listing.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[10px] font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 rounded-full px-2.5 py-1 mt-1 transition-colors w-fit"
+              >
+                <ExternalLink className="h-3 w-3" />
+                Open in Google Maps
+              </a>
+            )}
           </div>
           {/* Quick Stats Block */}
           <div className="flex items-center justify-between pt-4">

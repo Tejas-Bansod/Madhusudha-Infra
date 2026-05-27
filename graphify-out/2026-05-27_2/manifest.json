@@ -1,7 +1,7 @@
 {
   "/home/tejas/Desktop/Realestate/crm/package.json": {
-    "mtime": 1779869765.870982,
-    "ast_hash": "bbbe26c68cc22a706272164e859abb93",
+    "mtime": 1779772927.3848226,
+    "ast_hash": "df519170f9ec0151deea0889d991a3c6",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/components.json": {
@@ -155,13 +155,13 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/components/sidebar.tsx": {
-    "mtime": 1779868586.0183282,
-    "ast_hash": "62dc2bd7f6a49149c2cd740ab03f7b17",
+    "mtime": 1779779338.5658176,
+    "ast_hash": "4354e825407cdf3edba4de9b5d6226dd",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/components/auth.tsx": {
-    "mtime": 1779867911.035032,
-    "ast_hash": "ac477b010d012593d13bd9da1ab80373",
+    "mtime": 1779867867.0020938,
+    "ast_hash": "15787c28df6df9afe3b96d95e27e841b",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/components/ui/accordion.tsx": {
@@ -510,13 +510,13 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/data/listings.ts": {
-    "mtime": 1779870564.6217148,
-    "ast_hash": "dd9b349d7e6b4d607622f0a91b538af4",
+    "mtime": 1779723605.1756392,
+    "ast_hash": "df92156a8f589f0b82328e85f7778207",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/components/listing-details-drawer.tsx": {
-    "mtime": 1779870067.5900214,
-    "ast_hash": "adff223c4cce7d86a56310e668e532a2",
+    "mtime": 1779723621.7930346,
+    "ast_hash": "0ce4ce136f42f4766da71142db105ac4",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/components/listing-card.tsx": {
@@ -525,8 +525,8 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/components/listing-map-hud.tsx": {
-    "mtime": 1779869946.8866012,
-    "ast_hash": "776bb0e621bf179a686c74f00401a8b2",
+    "mtime": 1779724020.8738399,
+    "ast_hash": "992ddf0138fb258a59f6fcf51c90a9a8",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/components/listing-table.tsx": {
@@ -657,21 +657,6 @@
   "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/appointments/components/VisitList.tsx": {
     "mtime": 1779774191.291385,
     "ast_hash": "6b12e1d30ba6aa7464938d395b47261f",
-    "semantic_hash": ""
-  },
-  "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/edit-property/[id]/page.tsx": {
-    "mtime": 1779868517.8751395,
-    "ast_hash": "6e3eaca6215767f18a91d8c64360b3ad",
-    "semantic_hash": ""
-  },
-  "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/add-property/page.tsx": {
-    "mtime": 1779868505.2309217,
-    "ast_hash": "ddf6e6b66986ebc9cbfa4f1a2285ddc8",
-    "semantic_hash": ""
-  },
-  "/home/tejas/Desktop/Realestate/crm/src/app/dashboard/properties/components/property-form.tsx": {
-    "mtime": 1779870641.0618994,
-    "ast_hash": "134923570392e0055af284bcfb0626e7",
     "semantic_hash": ""
   }
 }
