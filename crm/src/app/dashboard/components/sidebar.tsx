@@ -44,6 +44,11 @@ import {
   Settings2,
   TrendingUp,
   X,
+  Mail,
+  Send,
+  Logs,
+  ListPlus,
+  LayoutTemplate,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -92,6 +97,7 @@ const appsItems = [
     bgClass: "bg-violet-500",
     subItems: [
       { name: "Listings", href: "/dashboard/properties/listings", icon: List },
+      { name: "Add Property", href: "/dashboard/properties/listings/add", icon: ListPlus },
     ]
   },
 
@@ -131,16 +137,18 @@ const appsItems = [
     ]
   },
 
-  // { 
-  //   name: "Automations", 
-  //   href: "/dashboard/automations", 
-  //   icon: Zap, 
-  //   bgClass: "bg-yellow-500",
-  //   subItems: [
-  //     { name: "Workflows", href: "/dashboard/automations/workflows", icon: GitBranch },
-  //     { name: "Settings", href: "/dashboard/automations/settings", icon: Settings2 }
-  //   ]
-  // },
+  { 
+    name: "Emails", 
+    href: "/dashboard/email", 
+    icon: Mail, 
+    bgClass: "bg-blue-500",
+    subItems: [
+      { name: "Send Email", href: "/dashboard/email/send-emails", icon: Send },
+      { name: "Email Logs", href: "/dashboard/email/email-logs", icon: Logs },
+      { name: "Templates", href: "/dashboard/email/templates", icon: LayoutTemplate },
+    ]
+  },
+
 ];
 
 
