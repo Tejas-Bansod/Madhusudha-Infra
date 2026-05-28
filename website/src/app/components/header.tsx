@@ -245,33 +245,33 @@ export default function Header() {
       <div
         className={`w-full transition-all duration-300 ease-in-out ${
           isSticky
-            ? "bg-black/60 lg:bg-[#f8f9fa]/80 backdrop-blur-lg shadow-md border-b border-slate-800/10 lg:border-slate-200/80 py-4"
-            : "bg-black/60 lg:bg-transparent backdrop-blur-sm border-b border-white/10 py-5"
+            ? "bg-black/60 lg:bg-[#f8f9fa]/80 backdrop-blur-lg shadow-md border-b border-slate-800/10 lg:border-slate-200/80 py-2.5 sm:py-4"
+            : "bg-black/60 lg:bg-transparent backdrop-blur-sm border-b border-white/10 py-3.5 sm:py-5"
         }`}
       >
-        <div className="w-full px-6 lg:px-12 flex items-center justify-between">
+        <div className="w-full px-4 sm:px-6 lg:px-12 flex items-center justify-between">
           
           {/* Logo Section */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-linear-to-tr from-sky-600 to-indigo-600 text-white shadow-lg shadow-sky-500/10 group-hover:scale-105 transition-transform duration-300">
-              <Building2 className="w-5.5 h-5.5" />
-              <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-500 rounded-full border border-white animate-pulse"></span>
+          <Link href="/" className="flex items-center gap-1.5 sm:gap-2.5 group">
+            <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-linear-to-tr from-sky-600 to-indigo-600 text-white shadow-lg shadow-sky-500/10 group-hover:scale-105 transition-transform duration-300 shrink-0">
+              <Building2 className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5" />
+              <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 sm:w-2.5 sm:h-2.5 bg-emerald-500 rounded-full border border-white animate-pulse"></span>
             </div>
             <div className="flex flex-col">
               <div className="flex items-center">
                 <span
-                  className={`font-extrabold tracking-wider text-lg sm:text-xl leading-none transition-colors duration-300 ${
+                  className={`font-extrabold tracking-wider text-xs sm:text-lg md:text-xl leading-none transition-colors duration-300 ${
                     isSticky ? "text-white lg:text-slate-900" : "text-white"
                   }`}
                 >
                   MADHUSUDHA
                 </span>
-                <span className="text-sky-500 font-black text-lg sm:text-xl leading-none ml-1">
+                <span className="text-sky-500 font-black text-xs sm:text-lg md:text-xl leading-none ml-1">
                   INFRA
                 </span>
               </div>
               <span
-                className={`text-[10px] font-bold uppercase tracking-[0.2em] mt-0.5 leading-none transition-colors duration-300 ${
+                className={`text-[7px] sm:text-[10px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.2em] mt-0.5 leading-none transition-colors duration-300 ${
                   isSticky ? "text-slate-300 lg:text-slate-700 hover:lg:text-sky-600" : "text-white"
                 }`}
               >
@@ -391,17 +391,17 @@ export default function Header() {
           </div>
 
           {/* Mobile Hamburguer and Actions Menu */}
-          <div className="flex lg:hidden items-center gap-3">
+          <div className="flex lg:hidden items-center gap-1.5 sm:gap-3">
             {/* Profile Avatar */}
             <button
               aria-label="User profile"
-              className={`w-9 h-9 rounded-full flex items-center justify-center border transition-all duration-300 ${
+              className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center border transition-all duration-300 ${
                 isSticky
                   ? "bg-white/10 border-white/10 lg:bg-slate-100 lg:border-slate-200 text-slate-200 lg:text-slate-700 hover:bg-white/20 lg:hover:bg-slate-250 hover:text-white lg:hover:text-slate-900"
                   : "bg-white/10 border-white/10 text-slate-200 hover:bg-white/20 hover:text-white"
               }`}
             >
-              <User className="w-4 h-4" />
+              <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </button>
 
             {/* Sheet Mobile Menu */}
@@ -410,14 +410,14 @@ export default function Header() {
                 <Button
                   variant="outline"
                   size="icon"
-                  className={`transition-all duration-300 ${
+                  className={`w-8 h-8 sm:w-10 sm:h-10 transition-all duration-300 ${
                     isSticky
                       ? "bg-white/10 border-white/10 lg:bg-slate-100 lg:border-slate-200 hover:bg-white/20 lg:hover:bg-slate-200 text-slate-200 lg:text-slate-700 hover:text-white lg:hover:text-slate-900"
                       : "bg-white/10 border-white/10 hover:bg-white/20 text-slate-200 hover:text-white"
                   }`}
                   aria-label="Open menu"
                 >
-                  <Menu className="w-5 h-5" />
+                  <Menu className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Button>
               </SheetTrigger>
               <SheetContent
