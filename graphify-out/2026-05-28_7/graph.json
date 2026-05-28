@@ -1123,7 +1123,7 @@
       "label": "Header()",
       "file_type": "code",
       "source_file": "website/src/app/components/header.tsx",
-      "source_location": "L108",
+      "source_location": "L143",
       "id": "components_header_header",
       "community": 35,
       "norm_label": "header()"
@@ -9513,9 +9513,9 @@
       "source_file": "website/src/app/layout.tsx",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "website_src_app_layout_tsx",
-      "target": "app_layout_inter"
+      "target": "app_layout_inter",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9523,9 +9523,9 @@
       "source_file": "website/src/app/layout.tsx",
       "source_location": "L11",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "website_src_app_layout_tsx",
-      "target": "app_layout_outfit"
+      "target": "app_layout_outfit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
