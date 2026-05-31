@@ -6,8 +6,8 @@ import Areas from "@/app/components/areas";
 import Process from "@/app/components/process";
 import WhyUs from "@/app/components/why-us";
 import Testimonials from "@/app/components/testimonials";
-import CtaBanner from "@/app/components/cta-banner";
 import Footer from "@/app/components/footer";
+import VisitorLeadPopup from "@/app/components/visitor-lead-popup";
 
 export default function Home() {
   return (
@@ -22,6 +22,7 @@ export default function Home() {
       <Testimonials />
       {/* <CtaBanner /> */}
       <Footer />
+      <VisitorLeadPopup />
     </main>
   );
 }
