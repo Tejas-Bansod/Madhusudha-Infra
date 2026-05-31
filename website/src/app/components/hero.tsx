@@ -90,13 +90,13 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-[64px] font-black tracking-tight leading-tight drop-shadow-md">
-            Find Your <span className="text-white">Dream Home</span>
+            Find Your Dream Home in the World's Best Locations
           </h1>
 
           {/* Subtitle */}
           <p className="max-w-2xl text-xs sm:text-sm md:text-lg leading-relaxed text-slate-200/90 font-medium px-2 sm:px-4 drop-shadow-sm">
-            We are recognized for exceeding client expectations and delivering great results through dedication, ease of
-            process, and extraordinary services to our worldwide clients.
+            Renowned for exceeding client expectations and delivering outstanding results, we offer seamless processes and
+            exceptional service to our global clientele.
           </p>
 
           <div className="flex flex-row gap-3 justify-center items-center w-full sm:w-auto max-w-sm sm:max-w-none px-4">

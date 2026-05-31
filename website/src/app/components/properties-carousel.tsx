@@ -73,9 +73,9 @@ export default function PropertiesCarousel() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="text-sky-600 font-bold uppercase tracking-widest text-xs">Featured Spotlight</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2">List Featured Properties</h2>
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-2">Featured Property Spotlight</h2>
           <p className="text-slate-500 mt-2 text-sm leading-relaxed">
-            Create multiple listing layouts and control how each card looks and what info shows that are specially curated to perfection for our clients.
+            Explore our signature developments, carefully curated to offer unmatched luxury, comfort, and exceptional investment value in Hyderabad's prime localities.
           </p>
         </div>
       </div>

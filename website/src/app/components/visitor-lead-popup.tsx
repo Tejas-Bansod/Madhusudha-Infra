@@ -30,7 +30,7 @@ export default function VisitorLeadPopup() {
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetContent
         side="right"
-        className="w-full max-w-none overflow-y-auto 0 p-0 sm:w-[460px] sm:max-w-[460px] bg-gradient-to-b from-[#0073e1] via-[#4a97ef] to-[#b0c9f8]"
+        className="!w-full max-w-none overflow-y-auto p-0 sm:!w-[460px] sm:!max-w-[460px] bg-gradient-to-b from-[#0073e1] via-[#4a97ef] to-[#b0c9f8]"
       >
         <div className="relative h-screen ">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.16),transparent_45%)]" />
@@ -119,9 +119,9 @@ export default function VisitorLeadPopup() {
               </div>
 
               <div className="rounded-xl border border-white/25 bg-white/12 p-3 text-xs text-white/90">
-                <div className="flex items-center gap-2 text-white">
-                  <Home className="size-3.5 text-[#46d382]" />
-                  You get a call back in under 30 minutes.
+                <div className="flex items-center gap-2 text-black">
+                  <Home className="size-3.5 text-[#000000]" />
+                  Receive a call back within 30 minutes.
                 </div>
               </div>
 

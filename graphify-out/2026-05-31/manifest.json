@@ -695,7 +695,7 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/next-env.d.ts": {
-    "mtime": 1780198315.6577992,
+    "mtime": 1779956354.821491,
     "ast_hash": "2a74d3909800ca5467fa83b0ab4a4890",
     "semantic_hash": ""
   },
@@ -715,8 +715,8 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/page.tsx": {
-    "mtime": 1780196760.3027337,
-    "ast_hash": "a84d5f89fd1c5168eb9778718c1bb3b9",
+    "mtime": 1779957624.162926,
+    "ast_hash": "dcadf5ff43b8d782125d9d5dea83a0a7",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/layout.tsx": {
@@ -725,8 +725,8 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/components/header.tsx": {
-    "mtime": 1779963349.099862,
-    "ast_hash": "cdad383afe98884c9af8174e394ff8e1",
+    "mtime": 1779962930.5500371,
+    "ast_hash": "3d67e14ac5463c896305eb932c130ae7",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/components/ui/button.tsx": {
@@ -775,8 +775,8 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/components/hero.tsx": {
-    "mtime": 1780200233.7763357,
-    "ast_hash": "679c381903591928ad5c5e8b31f38685",
+    "mtime": 1779959332.7033112,
+    "ast_hash": "1e5fe369cda665dae9f2920e1a589bf6",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/public/hero-video.mp4": {
@@ -795,8 +795,8 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/components/footer.tsx": {
-    "mtime": 1780199416.9076543,
-    "ast_hash": "bdfbb55d4a742879852f6a9bf5f3fb6b",
+    "mtime": 1779945851.9311404,
+    "ast_hash": "21229c4a1fa0468b3dfdcf0bf5d9c0d2",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/components/cta-banner.tsx": {
@@ -830,8 +830,8 @@
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/components/properties-carousel.tsx": {
-    "mtime": 1780200239.3573658,
-    "ast_hash": "98638a15f85c8b894ccea68bbb6bef20",
+    "mtime": 1779957738.0421903,
+    "ast_hash": "6d38338b925fb52e2d0cc61b3bd594e7",
     "semantic_hash": ""
   },
   "/home/tejas/Desktop/Realestate/website/src/app/components/floating-actions.tsx": {
@@ -842,11 +842,6 @@
   "/home/tejas/Desktop/Realestate/website/src/components/ui/carousel.tsx": {
     "mtime": 1779956367.9716885,
     "ast_hash": "87957503a6e61df988d3957757688275",
-    "semantic_hash": ""
-  },
-  "/home/tejas/Desktop/Realestate/website/src/app/components/visitor-lead-popup.tsx": {
-    "mtime": 1780200245.1713974,
-    "ast_hash": "ea47d6bd51036da77601e47383c40044",
     "semantic_hash": ""
   }
 }

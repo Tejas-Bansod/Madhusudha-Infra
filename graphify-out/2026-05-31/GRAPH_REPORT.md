@@ -1,16 +1,16 @@
-# Graph Report - Realestate  (2026-05-31)
+# Graph Report - Realestate  (2026-05-28)
 
 ## Corpus Check
-- 154 files · ~69,483 words
+- 153 files · ~69,056 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 976 nodes · 2158 edges · 69 communities (47 shown, 22 thin omitted)
+- 974 nodes · 2146 edges · 74 communities (52 shown, 22 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ee8376db`
+- Built from commit: `d5091695`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -61,6 +61,7 @@
 - [[_COMMUNITY_Community 45|Community 45]]
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
 - [[_COMMUNITY_Community 54|Community 54]]
 - [[_COMMUNITY_Community 55|Community 55]]
 - [[_COMMUNITY_Community 56|Community 56]]
@@ -73,14 +74,17 @@
 - [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
 - [[_COMMUNITY_Community 73|Community 73]]
 - [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 300 edges
-2. `Button()` - 56 edges
-3. `Badge()` - 35 edges
+2. `Button()` - 55 edges
+3. `Badge()` - 34 edges
 4. `Input()` - 20 edges
 5. `Avatar()` - 19 edges
 6. `AvatarImage()` - 19 edges
@@ -101,7 +105,7 @@
 - `TasksPage()` --calls--> `cn()`  [EXTRACTED]
   crm/src/app/dashboard/tasks/page.tsx → crm/src/lib/utils.ts
 
-## Communities (69 total, 22 thin omitted)
+## Communities (74 total, 22 thin omitted)
 
 ### Community 0 - "TypeScript Compiler Options"
 Cohesion: 0.10
@@ -124,8 +128,8 @@ Cohesion: 0.22
 Nodes (9): NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink(), NavigationMenuList(), NavigationMenuTrigger(), navigationMenuTriggerStyle (+1 more)
 
 ### Community 5 - "Project Metadata and Scripts"
-Cohesion: 0.06
-Nodes (50): AgentLeaderboard(), AgentLeaderboardProps, ListingTable(), ListingTableProps, Column(), columns, dropAnimation, measuring (+42 more)
+Cohesion: 0.07
+Nodes (28): ListingMapHud(), PropertyForm(), Column(), columns, dropAnimation, measuring, SortableTask(), TaskBoard() (+20 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.43
@@ -133,7 +137,7 @@ Nodes (5): ToggleGroup(), ToggleGroupContext, ToggleGroupItem(), Toggle(), toggl
 
 ### Community 7 - "Community 7"
 Cohesion: 0.20
-Nodes (8): InvoiceList(), InvoiceStats(), Button(), buttonVariants, Button(), buttonVariants, Calendar(), CalendarDayButton()
+Nodes (9): EmailLogEntry, EmailLogTable(), DEFAULT_EMAIL_STATS, EmailStats(), EmailStatsProps, Stat, maxSent, MOCK_LOGS (+1 more)
 
 ### Community 8 - "Storefront Landing Page Assets"
 Cohesion: 0.50
@@ -141,7 +145,7 @@ Nodes (3): Home(), Next.js Brand Logo, Vercel Brand Logo
 
 ### Community 19 - "Community 19"
 Cohesion: 0.13
-Nodes (18): dropAnimation, KanbanColumn(), LeadCard(), LeadKanban, LeadKanbanProps, LeadKanbanRef, measuring, priorityConfig (+10 more)
+Nodes (19): dropAnimation, KanbanColumn(), LeadCard(), LeadKanban, LeadKanbanProps, LeadKanbanRef, measuring, priorityConfig (+11 more)
 
 ### Community 20 - "Community 20"
 Cohesion: 0.09
@@ -173,19 +177,19 @@ Nodes (21): CarouselApi, CarouselContent(), CarouselContext, CarouselContextProp
 
 ### Community 27 - "Community 27"
 Cohesion: 0.07
-Nodes (34): AgentsPage(), cn(), PropertyListingsPage(), StatCard(), TemplatesPage(), Accordion(), AccordionContent(), AccordionItem() (+26 more)
+Nodes (34): AgentsPage(), ListingCard(), cn(), PropertyListingsPage(), StatCard(), TemplatesPage(), Accordion(), AccordionContent() (+26 more)
 
 ### Community 28 - "Community 28"
 Cohesion: 0.18
 Nodes (10): ChartConfig, ChartContainer(), ChartContext, ChartContextProps, ChartLegendContent(), ChartTooltipContent(), INITIAL_DIMENSION, THEMES (+2 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.14
-Nodes (14): DocumentGridProps, FileItem, DocumentListProps, FileItem, invoices, NotificationsDropdown(), TopbarProps, visits (+6 more)
+Cohesion: 0.17
+Nodes (13): DocumentGrid(), DocumentGridProps, FileItem, InvoiceList(), invoices, NotificationsDropdown(), TopbarProps, DropdownMenu() (+5 more)
 
 ### Community 30 - "Community 30"
-Cohesion: 0.15
-Nodes (9): AlertDialogAction(), AlertDialogCancel(), AlertDialogContent(), AlertDialogDescription(), AlertDialogFooter(), AlertDialogHeader(), AlertDialogMedia(), AlertDialogOverlay() (+1 more)
+Cohesion: 0.25
+Nodes (6): Popover(), PopoverContent(), PopoverDescription(), PopoverHeader(), PopoverTitle(), PopoverTrigger()
 
 ### Community 32 - "Community 32"
 Cohesion: 0.18
@@ -200,8 +204,8 @@ Cohesion: 0.40
 Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn More
 
 ### Community 35 - "Community 35"
-Cohesion: 0.05
-Nodes (22): AgentDetailsSheet(), AgentDetailsSheetProps, NavItem, navItems, SocialIcons, ScheduleVisitModal(), VisitCalendar(), VisitList() (+14 more)
+Cohesion: 0.06
+Nodes (27): NavItem, navItems, SocialIcons, ListingDetailsDrawer(), ListingDetailsDrawerProps, CustomerCard(), CustomerDrawer(), CustomersPage() (+19 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.40
@@ -211,9 +215,17 @@ Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn Mor
 Cohesion: 0.22
 Nodes (7): Pagination(), PaginationContent(), PaginationEllipsis(), PaginationLink(), PaginationLinkProps, PaginationNext(), PaginationPrevious()
 
+### Community 51 - "Community 51"
+Cohesion: 0.08
+Nodes (4): DropdownMenuRadioItem(), DropdownMenuShortcut(), DropdownMenuSubContent(), DropdownMenuSubTrigger()
+
 ### Community 52 - "Community 52"
 Cohesion: 0.09
 Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+13 more)
+
+### Community 53 - "Community 53"
+Cohesion: 0.33
+Nodes (3): DocumentList(), DocumentListProps, FileItem
 
 ### Community 54 - "Community 54"
 Cohesion: 0.10
@@ -221,15 +233,15 @@ Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModu
 
 ### Community 55 - "Community 55"
 Cohesion: 0.06
-Nodes (51): AgentCard(), AgentCardProps, EmailComposer(), EmailLogEntry, EmailLogTable(), DEFAULT_EMAIL_STATS, EmailStats(), EmailStatsProps (+43 more)
+Nodes (64): AgentCard(), AgentCardProps, AgentDetailsSheet(), AgentDetailsSheetProps, AgentLeaderboard(), AgentLeaderboardProps, EmailComposer(), InvoiceStats() (+56 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.19
-Nodes (12): priorityConfig, SortDir, SortField, StageBadge(), appsItems, Sidebar(), SidebarProps, upperNavItems (+4 more)
+Cohesion: 0.29
+Nodes (8): appsItems, Sidebar(), SidebarProps, upperNavItems, Tooltip(), TooltipContent(), TooltipProvider(), TooltipTrigger()
 
 ### Community 57 - "Community 57"
 Cohesion: 0.07
-Nodes (56): DocumentGrid(), DocumentList(), DocumentStats(), Attachment, SUGGESTIONS, TEMPLATES, EmailLogTableProps, EmailStatus (+48 more)
+Nodes (48): DocumentStats(), Attachment, SUGGESTIONS, TEMPLATES, EmailLogTableProps, EmailStatus, STATUS_META, FileUploadModal() (+40 more)
 
 ### Community 58 - "Community 58"
 Cohesion: 0.40
@@ -247,6 +259,10 @@ Nodes (9): areas, propertyTypes, quickLinks, socials, SocialSVGs, VIDEOS, steps,
 Cohesion: 0.20
 Nodes (9): Command(), CommandDialog(), CommandEmpty(), CommandGroup(), CommandInput(), CommandItem(), CommandList(), CommandSeparator() (+1 more)
 
+### Community 71 - "Community 71"
+Cohesion: 0.25
+Nodes (7): Breadcrumb(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator()
+
 ### Community 72 - "Community 72"
 Cohesion: 0.40
 Nodes (5): Alert(), AlertAction(), AlertDescription(), AlertTitle(), alertVariants
@@ -259,6 +275,10 @@ Nodes (3): features, Button(), buttonVariants
 Cohesion: 0.22
 Nodes (5): filters, FilterType, properties, Badge(), badgeVariants
 
+### Community 77 - "Community 77"
+Cohesion: 0.40
+Nodes (3): InputOTP(), InputOTPGroup(), InputOTPSlot()
+
 ## Knowledge Gaps
 - **318 isolated node(s):** `name`, `version`, `private`, `dev`, `build` (+313 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -267,11 +287,11 @@ Nodes (5): filters, FilterType, properties, Badge(), badgeVariants
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 27` to `UI Components and Utilities`, `Development Build Dependencies`, `Project Metadata and Scripts`, `Community 6`, `Community 7`, `Community 19`, `Community 21`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 35`, `Community 37`, `Community 51`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 61`, `Community 70`, `Community 72`, `Community 73`, `Community 75`?**
-  _High betweenness centrality (0.327) - this node is a cross-community bridge._
-- **Why does `Button()` connect `Community 7` to `UI Components and Utilities`, `Community 35`, `Community 26`, `Project Metadata and Scripts`, `Community 37`, `Community 73`, `Community 75`, `Community 19`, `Community 23`, `Community 21`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 27`, `Community 29`, `Community 30`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
-- **Why does `Badge()` connect `Community 57` to `Community 35`, `Project Metadata and Scripts`, `Community 75`, `Community 19`, `Community 55`, `Community 56`, `Community 58`, `Community 27`, `Community 29`?**
+- **Why does `cn()` connect `Community 27` to `UI Components and Utilities`, `Development Build Dependencies`, `Project Metadata and Scripts`, `Community 6`, `Community 7`, `Community 19`, `Community 21`, `Community 23`, `Community 24`, `Community 25`, `Community 26`, `Community 28`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 35`, `Community 37`, `Community 51`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 61`, `Community 68`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 75`, `Community 77`, `Community 78`?**
+  _High betweenness centrality (0.328) - this node is a cross-community bridge._
+- **Why does `Button()` connect `Community 57` to `UI Components and Utilities`, `Community 35`, `Community 68`, `Project Metadata and Scripts`, `Community 37`, `Community 7`, `Community 26`, `Community 73`, `Community 75`, `Community 19`, `Community 23`, `Community 21`, `Community 53`, `Community 55`, `Community 56`, `Community 58`, `Community 27`, `Community 29`?**
+  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+- **Why does `Badge()` connect `Community 55` to `Community 35`, `Community 7`, `Community 75`, `Community 19`, `Community 53`, `Community 57`, `Community 58`, `Community 27`, `Community 29`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
   _321 weakly-connected nodes found - possible documentation gaps or missing edges._
