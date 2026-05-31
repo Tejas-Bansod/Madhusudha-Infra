@@ -73,6 +73,8 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-slate-950 border-t border-slate-800">
+
+
       {/* Newsletter banner */}
       <div className="bg-sky-600">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -104,6 +106,20 @@ export default function Footer() {
             </form>
           )}
         </div>
+      </div>
+
+            {/* Google Maps Section */}
+      <div className="w-full h-80 md:h-[300px] border-b border-slate-800 overflow-hidden relative">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3721.2545559679425!2d79.09830807525974!3d21.142265580535508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDA4JzMyLjIiTiA3OcKwMDYnMDMuMiJF!5e0!3m2!1sen!2sin!4v1780199276720!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full"
+        />
       </div>
 
       {/* Main footer */}
